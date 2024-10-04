@@ -3,7 +3,7 @@ from typing import List
 from dataclasses import dataclass
 from player import Player
 
-
+@dataclass
 class Food:
     """TODO: complete the Food class with appropriate variables and methods."""
     x: float
@@ -22,7 +22,7 @@ class Food:
     """
     return False # stub
 
-
+@dataclass
 class FoodList:
     """TODO: complete the FoodList class with appropriate variables and methods."""
     food: List[Food]
