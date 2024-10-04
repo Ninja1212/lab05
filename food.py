@@ -2,6 +2,7 @@
 from typing import List
 from dataclasses import dataclass
 from player import Player
+from typing_extensions import Self
 
 @dataclass
 class Food:
@@ -13,14 +14,27 @@ class Food:
     # TODO: create a method to move a single Food
     
     
-    def hit(self, player: Player) -> bool:
-    """
-    TODO: Design a function that takes this Food a Player and determines
-    whether they are touching.
+    def move(self, x: float, y: float) -> Self:
+        """
+        Purpose: moves a Food's position by x and y
+        Example:
+            food.x -> food.x + x
+            food.y -> food.x + y
+        """
+        self.x = self.x + x
+        self.y = self.y + y
+        return self
     
-    Use the HtDF formula and put your tests in tests.py.
-    """
-    return False # stub
+    
+    
+    def hit(self, player: Player) -> bool:
+        """
+        TODO: Design a function that takes this Food a Player and determines
+        whether they are touching.
+        
+        Use the HtDF formula and put your tests in tests.py.
+        """
+        return False # stub
 
 @dataclass
 class FoodList:

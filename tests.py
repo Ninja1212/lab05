@@ -71,6 +71,9 @@ expect(test_game.tick(), test_game)
 
 
 # TODO: add tests for moving one Food
+food = Food(90, 90)
+expect(food.move(10, 10), Food(100, 100))
+
 # TODO: add tests for populating FoodList
 # TODO: add tests for moving the player with the mouse
 # TODO: add tests for hitting Food
