@@ -70,8 +70,12 @@ expect(keys.pressed_keys((False,) * 100 + (True,) * 1), ['d'])
 expect(test_game.tick(), test_game)
 
 
-# TODO: add tests for hitting food
-# TODO: add tests for consuming food in the Player
+# TODO: add tests for moving one Food
+# TODO: add tests for populating FoodList
+# TODO: add tests for moving the player with the mouse
+# TODO: add tests for hitting Food
+# TODO: add tests for consuming Food in the Player
+# TODO: add tests for removing a food from FoodList
 # TODO: add tests for changing the size of Player based on food count
 
 #------------------------------------------------------------------------------#

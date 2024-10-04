@@ -45,5 +45,6 @@ class Player:
             self.x += amount
         return self
     
+    # TODO: add method for moving player based on mouse position
     # TODO: add method for incrementing your food count 
     # TODO: add method for changing the player size based on food count

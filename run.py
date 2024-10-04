@@ -47,7 +47,7 @@ def main():
                         "w": "UP",
                         "s": "DOWN",
                         "a": "LEFT",
-                        "d": "RIGHT"
+                        "d": "RIGHT",
         },
     )
 
@@ -63,6 +63,8 @@ def main():
     
     # Initialze pygame
     pygame.init()
+
+    # TODO: initialize FoodList
     
     # Run forever in a loop until quit
     while game.running:
@@ -82,14 +84,18 @@ def main():
         
         # Move the player
         player.move(game.deltaT, dirs)
-
-        # TODO: determine whether your food has been consumed
-        # TODO: change the player size based on food count
-        # TODO: draw the food
+        # TODO: move player depending on mouse position
+        
+        # TODO: determine whether your Food has been consumed
+        # TODO: run all actions depending on whether Food has been consumed
+        
+        # TODO: move the Food
+        # TODO: draw the Food
 
         # Draw the game
         # TODO: extend to draw Food 
         draw(game, player)
+
 
 # Run the main function
 if __name__ == "__main__":

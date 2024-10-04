@@ -1,5 +1,5 @@
 from typing import Dict, Tuple, List
-import pygame 
+import pygame
 
 def pressed_keys(keys: Tuple[bool, ...]) -> List[str]:
     """
