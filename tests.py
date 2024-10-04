@@ -4,6 +4,7 @@ from cs110 import expect, summarize
 import game
 import player
 import keys
+from food import Food
 
 #------------------------------------------------------------------------------#
 # Setup: Run these before all tests.
@@ -71,8 +72,8 @@ expect(test_game.tick(), test_game)
 
 
 # TODO: add tests for moving one Food
-food = Food(90, 90)
-expect(food.move(10, 10), Food(100, 100))
+test_food = Food(90, 90, 90)
+expect(test_food.move(10, 10), Food(100, 100))
 
 # TODO: add tests for populating FoodList
 # TODO: add tests for moving the player with the mouse
